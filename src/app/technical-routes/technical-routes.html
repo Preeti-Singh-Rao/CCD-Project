@@ -1,0 +1,17 @@
+<div class="container-fluid py-5 px-5 bg-white mb-5">
+
+    <div class="text-center mb-5">
+        <h1 class="text-primary fw-bold">Technical Routes</h1>
+        <h5 class="text-dark">A Platform Dedicated to Agrochemical, Pharmaceutical, Specialty Chemical, Battery Chemicals, Dyes, and LED Chemical etc.</h5>
+    </div>
+
+    <div class="row justify-content-center g-5 mt-5">
+        <div *ngFor="let item of routesList" class="col-lg-6">
+            <div class="p-3 bg-white rounded-pill mb-5" style="width: fit-content;">
+                <h6 class="fw-bold text-dark"><i class="bi bi-check2-circle text-warning"></i> {{ item.title }}</h6>
+            </div>
+        </div>
+        <div class="text-center mt-6">
+            <button type="button" class=" btn btn-lg btn-primary text-white rounded-pill mb-4 p-2">View More <i class="bi bi-arrow-right-circle-fill"></i></button>
+        </div>
+    </div>
