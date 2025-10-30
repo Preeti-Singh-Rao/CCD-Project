@@ -1,0 +1,91 @@
+<div class="container-fluid py-5 px-3 px-md-5 bg-light">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8 bg-white rounded-4 shadow-sm p-4 p-md-5">
+      <div
+        class="d-flex justify-content-between align-items-center mb-5 flex-wrap text-center text-md-start"
+      >
+        <img
+          src="../../../assets/Images/header_logo_1726637785151.png"
+          alt="Logo"
+          class="img-fluid bg-warning"
+          style="max-height: 60px"
+        />
+
+        <h1 class="fw-bold text-primary mb-0 flex-grow-1 text-center">Sign Up</h1>
+
+        <div
+          class="d-flex flex-column flex-sm-row align-items-center justify-content-end gap-2 mt-3 mt-sm-0"
+        >
+          <p class="text-secondary mb-0">
+            Already have an account?
+            <a href="#" class="text-primary fw-semibold text-decoration-none">Sign In</a>
+          </p>
+          <div class="text-secondary d-none d-sm-inline">
+            <p class="text-secondary mb-0">
+              view page in full screen -
+              <a href="#" class="text-primary fw-semibold text-decoration-none">Sign Up</a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="mb-5">
+        <h5 class="fw-bold  mb-5">I am a Professional and describe myself as:</h5>
+        <div class="row gx-3">
+          <div
+            class="col-12 col-sm-4 col-md-3 col-lg-2 mb-2"
+            *ngFor="let profession of checkboxList"
+          >
+            <div
+              class="form-check border border-primary text-primary rounded-pill py-2 d-flex align-items-center justify-content-center"
+            >
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                [id]="profession"
+                name="profession"
+              />
+              <label class="form-check-label" [for]="profession">
+                {{ profession }}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3 mb-4">
+        <h5 class="fw-bold text-dark">Note</h5>
+        <ul class="mb-0 ps-3">
+          <li class="mb-2">
+            <strong>Trial Access:</strong> ChemRobotics® offers trial access for users interested in
+            evaluating our database. Please note that ChemRobotics® is a premium service requiring a
+            paid subscription.
+          </li>
+          <li class="mb-2">
+            <strong>Registration Policy:</strong> In accordance with our database policy, we request
+            that users register using their official company domain email. Personal email addresses
+            (e.g., Gmail, Yahoo, Rediff) are not accepted for the sign-up process.
+          </li>
+          <li class="mb-2">
+            <strong>Accurate Sign-Up Information:</strong> To ensure an optimal experience, we ask
+            that users provide accurate and complete details during the sign-up process. The
+            ChemRobotics® support team will review the submitted information, and any incorrect,
+            false, or incomplete data may result in the denial of trial access.
+          </li>
+          <li class="mb-2">
+            <strong>Activation Process:</strong> Once the sign-up process is successfully completed,
+            our support team will review the registration details. If approved, the user will
+            receive an activation email directly from the ChemRobotics® support team.
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary rounded-pill py-2 px-4 fw-semibold">
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

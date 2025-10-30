@@ -1,0 +1,22 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.navbar,
+.container-fluid,
+.navbar-nav {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+}
+
+.navbar .nav-link:hover {
+  background-color: white;
+  
+}
+.gradient-navy {
+  background: linear-gradient(145.5deg, #0032A0 0%, #051D2C 99.58%);
+}

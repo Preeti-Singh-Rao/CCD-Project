@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+.text-navy {
+  color: #0032a0 !important; 
+}
+.gradient-navy {
+  background: linear-gradient(145.5deg, #0032A0 0%, #051D2C 99.58%);
+}
+
+.agro-bg {
+  background-image: url('../../assets/Images/agropat_bg.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  
+}
+
+.techRoutes-bg {
+  background-image: url('../../assets/Images/technical_routes.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  
+}
+.quickPat-bg {
+  background-image: url('../../assets/Images/quikpatent_bg.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  
+}
+.pharmaVetpat-bg {
+  background-image: url('../../assets/Images/pharma_vetpat.webp');
+  background-size:60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  
+}
+.xim-bg {
+  background-image: url('../../assets/Images/xim.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ min-height: 500px;  
+  
+}
+
+/* Remove border-radius on small screens */
+.content-box {
+  border-bottom-left-radius: 0;
+  min-height: 700px;
+}
+
+/* Add rounded corner only for md and above (≥768px) */
+@media (min-width: 768px) {
+  .content-box {
+    border-bottom-left-radius: 200px;
+  }
+}
+
+.tracker-box {
+  border-bottom-right-radius: 0;
+  min-height: 700px;
+}
+
+@media (min-width: 768px) {
+  .tracker-box {
+    border-bottom-right-radius: 200px;
+  }
+}
+
+
+.ipd-box {
+  border-bottom-right-radius: 0;
+  min-height: 700px;
+}
+
+@media (min-width: 768px) {
+  .ipd-box {
+    border-bottom-right-radius: 200px;
+  }
+}
+
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row {  
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* img.img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
+ 
+
+
+
