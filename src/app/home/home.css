@@ -51,20 +51,22 @@
 
 /* Remove border-radius on small screens */
 .content-box {
+
   border-bottom-left-radius: 0;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 /* Add rounded corner only for md and above (≥768px) */
 @media (min-width: 768px) {
   .content-box {
     border-bottom-left-radius: 200px;
+    
   }
 }
 
 .tracker-box {
   border-bottom-right-radius: 0;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 @media (min-width: 768px) {
@@ -76,7 +78,7 @@
 
 .ipd-box {
   border-bottom-right-radius: 0;
-  min-height: 700px;
+  min-height: 900px;
 }
 
 @media (min-width: 768px) {
