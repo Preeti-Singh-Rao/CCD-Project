@@ -45,7 +45,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
- min-height: 500px;  
+  min-height: 500px;  
   
 }
 
@@ -84,6 +84,8 @@
     border-bottom-right-radius: 200px;
   }
 }
+
+
 
 
 .container-fluid {

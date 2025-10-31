@@ -1,6 +1,6 @@
 <!--Logo's-->
 
-<div class="container-fluid bg-white px-4 py-5 px-md-5">
+<div class="container-fluid bg-white px-3 py-5 px-md-5" style="margin-top: 140px;">
   <div class="row justify-content-center align-items-center g-4 g-md-5">
     <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
       <img src="../../assets/Images/client_1726555368101.jpg" class="img-fluid" alt="Client 1">
@@ -189,15 +189,15 @@
 
 <!--AgroPat-->
 
-<div class="container-fluid py-4 bg-white">
+<div class="container-fluid py-4 bg-white d-none d-md-block">
   <div class="text-center mb-5">
     <h1 class="text-navy fw-bold">AgroPat</h1>
     <h5 class="text-dark">A Crop Protection Active Ingredient (AI) Database</h5>
   </div>
 
-  <div class="row justify-content-center g-4 px-5 py-5 agro-bg">
+  <div class="row d-flex justify-content-center align-items-center g-4 px-5 py-5 agro-bg">
     <div *ngFor="let item of agroList" class="col-12 col-md-6 col-lg-5">
-      <div class="bg-white shadow-sm p-2 d-flex" style="width: fit-content">
+      <div class="bg-white shadow-sm p-2 d-flex align-items-center" style="width: fit-content">
         <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
         <h6 class="text-dark">{{ item.title }}</h6>
       </div>
@@ -210,6 +210,38 @@
     </button>
   </div>
 </div>
+
+<!--agropat for small screen-->
+<div class="container-fluid bg-white d-block d-md-none py-4">
+  <div class="text-center mb-3">
+    <h1 class="text-navy fw-bold">AgroPat</h1>
+    <h5 class="text-dark">A Crop Protection Active Ingredient (AI) Database</h5>
+  </div>
+
+  <div class="text-center mb-4">
+    <img
+      src="../../assets/Images/agropat_bg.webp"
+      alt="AgroPat"
+      class="img-fluid rounded shadow-sm"
+      style="max-height: 250px; object-fit: cover;"
+    />
+  </div>
+
+  <div class="px-3">
+    <div
+      *ngFor="let item of agroList"
+      class="bg-white shadow-sm p-3 mb-3 d-flex align-items-center justify-content-start rounded-3"
+    >
+      <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
+      <h6 class="text-dark mb-0">{{ item.title }}</h6>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 <!-- MaximumResiduwLimits -->
 
@@ -263,7 +295,7 @@
 
 <!-- TechnicalRoutes -->
 
-<div class="container-fluid py-5 bg-white">
+<div class="container-fluid py-5 bg-white d-none d-md-block">
 
   <div class="text-center px-3 px-md-5 mb-5 py-4">
     <h1 class="text-navy fw-bold">Technical Routes</h1>
@@ -277,10 +309,10 @@
     <div *ngFor="let item of routesList" class="col-12 col-sm-10 col-md-6 col-lg-5">
       <div
         class="bg-white shadow-sm p-3 d-flex align-items-center justify-content-start rounded"
-        style="width: 100%;"
+        style="width: fit-content;"
       >
         <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
-        <h6 class="text-dark mb-0">{{ item.title }}</h6>
+        <h6 class="text-dark mb-0 ">{{ item.title }}</h6>
       </div>
     </div>
   </div>
@@ -292,6 +324,34 @@
     >
       View More <i class="bi bi-arrow-right-circle-fill ms-1"></i>
     </button>
+  </div>
+</div>
+
+<!-- technical routes for small screen-->
+<div class="container-fluid bg-white d-block d-md-none py-4">
+  <div class="text-center mb-3">
+    <h1 class="text-navy fw-bold">Technical Routes</h1>
+    <h5 class="text-dark">A Platform Dedicated to Agrochemical, Pharmaceutical, Specialty Chemical, Battery Chemicals,
+      Dyes, and LED Chemicals, etc.</h5>
+  </div>
+
+  <div class="text-center mb-4">
+    <img
+      src="../../assets/Images/technical_routes.webp"
+      alt="AgroPat"
+      class="img-fluid rounded shadow-sm"
+      style="max-height: 250px; object-fit: cover;"
+    />
+  </div>
+
+  <div class="px-3">
+    <div
+      *ngFor="let item of routesList"
+      class="bg-white shadow-sm p-3 mb-3 d-flex align-items-center justify-content-start rounded-3"
+    >
+      <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
+      <h6 class="text-dark mb-0">{{ item.title }}</h6>
+    </div>
   </div>
 </div>
 
@@ -348,7 +408,7 @@
 
 
 <!-- QuickPatent -->
-<div class="container-fluid py-5 bg-white">
+<div class="container-fluid py-5 bg-white d-none d-md-block">
   <div class="text-center mb-5 px-3 py-4 px-md-5">
     <h1 class="text-navy fw-bold">QuikPatent - Constraining Patent Guide</h1>
     <h5 class="text-dark">
@@ -361,7 +421,7 @@
 
   <div class="row justify-content-center g-4 px-3 px-md-5 py-4 quickPat-bg">
     <div *ngFor="let item of patentList" class="col-12 col-sm-10 col-md-6 col-lg-5">
-      <div class="bg-white shadow-sm p-3 d-flex align-items-center justify-content-start rounded" style="width:100%">
+      <div class="bg-white shadow-sm p-3 d-flex align-items-center justify-content-start rounded" style="width:fit-content">
         <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
         <h6 class="text-dark mb-0">{{ item.title }}</h6>
       </div>
@@ -375,9 +435,39 @@
   </div>
 </div>
 
+<!--quickpatent for small screens-->
+<div class="container-fluid bg-white d-block d-md-none py-4">
+  <div class="text-center mb-3">
+    <h1 class="text-navy fw-bold">QuikPatent - Constraining Patent Guide</h1>
+    <h5 class="text-dark">A patent intelligence database offers insights into patents within the agrochemical segment,
+      focusing on raw materials such as active ingredients (technical), formulation, combinations
+      (mixtures), and their intermediates. This enables companies to better understand their
+      competitors.</h5>
+  </div>
+
+  <div class="text-center mb-4">
+    <img
+      src="../../assets/Images/quikpatent_bg.webp"
+      alt="AgroPat"
+      class="img-fluid rounded shadow-sm"
+      style="max-height: 250px; object-fit: cover;"
+    />
+  </div>
+
+  <div class="px-3">
+    <div
+      *ngFor="let item of patentList"
+      class="bg-white shadow-sm p-3 mb-3 d-flex align-items-center justify-content-start rounded-3"
+    >
+      <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
+      <h6 class="text-dark mb-0">{{ item.title }}</h6>
+    </div>
+  </div>
+</div>
+
 <!-- PharmaVatPet -->
 
-<div class="container-fluid py-5 px-5 bg-light">
+<div class="container-fluid py-5 px-5 bg-light d-none d-md-block">
   <div class="text-center mb-5 py-5 px-5">
     <h1 class="text-navy fw-bold">PharmVetPat®</h1>
     <h5 class="text-dark">(Pharmaceutical API & Specialty Chemical Database)</h5>
@@ -399,6 +489,34 @@
   </div>
 </div>
 
+<!--pharmavet for small screens-->
+<div class="container-fluid bg-white d-block d-md-none py-4">
+  <div class="text-center mb-3">
+    <h1 class="text-navy fw-bold">PharmVetPat®</h1>
+    <h5 class="text-dark">(Pharmaceutical API & Specialty Chemical Database)</h5>
+  </div>
+
+  <div class="text-center mb-4">
+    <img
+      src="../../assets/Images/pharma_vetpat.webp"
+      alt="AgroPat"
+      class="img-fluid rounded shadow-sm"
+      style="max-height: 250px; object-fit: cover;"
+    />
+  </div>
+
+  <div class="px-3">
+    <div
+      *ngFor="let item of pharmaVetList"
+      class="bg-white shadow-sm p-3 mb-3 d-flex align-items-center justify-content-start rounded-3"
+    >
+      <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
+      <h6 class="text-dark mb-0">{{ item.title }}</h6>
+    </div>
+  </div>
+</div>
+
+
 <!-- ProductDirectory -->
 
 <div class="container-fluid bg-white min-vh-100">
@@ -415,7 +533,7 @@
 
     <!-- Right Section -->
     <div
-      class="col-12 col-md-6 bg-warning directory-box d-flex flex-column justify-content-center ps-md-5 py-5"
+      class="col-12 col-md-6 bg-warning content-box d-flex flex-column justify-content-center ps-md-5 py-5"
     >
       <h1 class="fw-bold text-navy mt-md-4">
         Global Agro Product Directory
@@ -462,7 +580,7 @@
 <!-- AgroPharm-XIM -->
 
 <div
-  class="container-fluid py-5 bg-light"
+  class="container-fluid py-5 bg-light d-none d-md-block"
   style="padding-left: 100px; padding-right: 100px; min-height: 700px"
 >
   <div class="text-center mb-5 mt-5">
@@ -474,7 +592,7 @@
   </div>
 
   <div class="row justify-content-center g-5 mt-5 xim-bg">
-    <div *ngFor="let item of agroPharmList" class="col-lg-6">
+    <div *ngFor="let item of agroPharmList" class="col-lg-6 mt-5">
       <div class="p-3 bg-white mb-5 mt-5" style="width: fit-content">
         <h6 class="text-dark"><i class="bi bi-check2-circle text-warning"></i> {{ item.title }}</h6>
       </div>
@@ -490,7 +608,35 @@
   </div>
 </div>
 
-<!-- PestisideDatabase -->
+<!--XIM for small screens-->
+<div class="container-fluid bg-white d-block d-md-none py-4">
+  <div class="text-center mb-3">
+    <h1 class="text-navy fw-bold">AgroPharm-XIM Analytics Database</h1>
+    <h5 class="text-dark">Provides Export and Import Data for Pharmaceuticals and Agrochemicals with Their
+      Intermediates.</h5>
+  </div>
+
+  <div class="text-center mb-4">
+    <img
+      src="../../assets/Images/xim.webp"
+      alt="AgroPat"
+      class="img-fluid rounded shadow-sm"
+      style="max-height: 250px; object-fit: cover;"
+    />
+  </div>
+
+  <div class="px-3">
+    <div
+      *ngFor="let item of agroPharmList"
+      class="bg-white shadow-sm p-3 mb-3 d-flex align-items-center justify-content-start rounded-3"
+    >
+      <i class="bi bi-check2-circle text-warning fs-5 me-2"></i>
+      <h6 class="text-dark mb-0">{{ item.title }}</h6>
+    </div>
+  </div>
+</div>
+
+<!-- IndianPestisideDatabase -->
 
 <div class="container-fluid bg-white min-vh-100">
   <div class="row align-items-center">

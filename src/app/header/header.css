@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  
 }
 
 .navbar,
@@ -20,3 +21,5 @@ html, body {
 .gradient-navy {
   background: linear-gradient(145.5deg, #0032A0 0%, #051D2C 99.58%);
 }
+
+
