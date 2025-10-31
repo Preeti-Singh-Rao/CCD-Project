@@ -2,6 +2,9 @@ html, body {
   overflow-x: hidden;
   
 }
+.text-navy {
+  color: #0032a0 !important; 
+}
 
 .navbar,
 .container-fluid,
